@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Josefin+Sans:wght@500&family=Lobster&family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:ital@1&family=Satisfy&family=Tiro+Kannada:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Josefin+Sans:wght@500&family=Lobster&family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:ital@1&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Satisfy&display=swap');
-
+@import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-text');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Josefin+Sans:wght@500&family=Lobster&family=Oleo+Script+Swash+Caps:wght@700&family=Poppins:ital@1&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Satisfy&family=The+Nautigal:wght@700&display=swap');
 * { padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,6 +12,7 @@
     
     --indisfont:'Lobster', cursive;
     --gris:#403A3E;
+    
     --color-rosa_a:#ee9ca7;
     --color-rosa_b:#f17787;
     --color-rosa_c:#eb314a;
@@ -21,12 +23,14 @@
 html {
     scroll-behavior: smooth;
     font-size: 1.2em;  
-    font-family: 'Poppins', sans-serif;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
 }
 
 body {
     width: 100%;  
-    background-color: var(--gris)
+    background-color:white;
+ 
 }
 .titulos {
     font-size: 2em;
@@ -34,47 +38,570 @@ body {
     color: var(--color-rosa_c);
 }
 
-.header_container {
-    max-width: 1400px;
-    min-width: 340px;
+.main_header {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    
+    
+    
+}
+.logo {
+    font-size: 1.8rem;
+    color: var(--color-rosa_c);
+    font-family: var(--indisfont);
+    margin-left: clamp(20px, 2vw, 40px);
+    padding-top: 20px;
+}
+.log_in {
+    padding-right: 10px;
+    color: var(--color-rosa_c);
+    
+   
+}
+.log_header {
+    padding-top: 20px;
+    margin-right: clamp(20px, 2vw, 40px);
+}
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.portada {
+   
+    height: 80vh;
+    
+}
+.img_portada {
+    display: flex;
+    height: 100%;
+    width: 100%;;
+    margin: 0 auto;
+    background-image: url(./img/portada3.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.portada_left {
+    width: 50%;
+}
+.portada_right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:200px;
+}
+.logo_portada{
+    font-size: 1.4em;
+    color: var(--color-rosa_c);
+    font-family: var(--indisfont);
+    font-size: 6rem;
+    
+}
+.eslogan_portada {
+    padding-bottom: 300px;
+    font-size: 4rem;
+    color: white;
+    font-family: 'The Nautigal', cursive;
+    -webkit-text-stroke: 1px var(--color-rosa_b);
+}
+
+.container {
+    width: 80%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.box_container {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 10px;
+    gap: 20px;
+    margin-top: 90px;
 }
-
-.header {
-    height: 180px;
-    width: 100vw;
-    background-color: var(--color-rosa_b);
-    
-    
-}
-.logo{
-    font-size: 5em;
-    color: white;
-    font-family: var(--indisfont);
-    margin-left: clamp(10px, 2vw, 40px);
-   
-
-}
-.log_container {
-    padding-top: 40px;
-    margin-right: clamp(10px, 2vw, 60px);
+.box {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+   
+}
+.content_box {
+    text-align: center;
+    font-size: .7rem;
+}
+
+.content_box p {
+    margin-bottom: 4px;
+}
+
+
+/* SECTION HOMBRE*/
+
+.grid_container {
+    display: grid;
+    grid-template-columns:  33% 33% 33%;
+    grid-template-rows: 60vh 60vh; 
+    gap: 40px; 
+   
+}
+
+.section_ropa {
+    margin-top: 70px;
+}
+
+.grid_ropa {
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+}
+.titulo_ropa {
+    font-size: 2.1rem;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family:"Montserrat", "Helvetica Neue";
+    color: var(--color-rosa_b);
+
+}
+
+.grid_box_containerH:nth-child(1){
+    background-image:url(./img/section_hombre/1.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition: 1s;
     
+}
+.grid_box_containerH:nth-child(2) {
+     background-image:url(./img/section_hombre/2.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+ .grid_box_containerH:nth-child(3) {
+    background-image:url(./img/section_hombre/3.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+ .grid_box_containerH:nth-child(4) {
+    background-image:url(./img/section_hombre/4.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+ .grid_box_containerH:nth-child(5) {
+    background-image:url(./img/section_hombre/5.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+ .grid_box_containerH:nth-child(6) {
+    background-image:url(./img/section_hombre/6.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+
+ .grid_box_containerH:nth-child(1):hover {
+    transition: 1s;
+opacity: .8; 
+}
+
+/*FIN SECTION HOMBRE*/
+
+/*SECTION MUJER*/
+
+.grid_box_containerM:nth-child(1){
+    background-image:url(./img/section_mujer/1.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.grid_box_containerM:nth-child(2) {
+     background-image:url(./img/section_mujer/2.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+ .grid_box_containerM:nth-child(3) {
+    background-image:url(./img/section_mujer/3.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+ .grid_box_containerM:nth-child(4) {
+    background-image:url(./img/section_mujer/4.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+ .grid_box_containerM:nth-child(5) {
+    background-image:url(./img/section_mujer/5.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+ .grid_box_containerM:nth-child(6) {
+    background-image:url(./img/section_mujer/6.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+ 
+
+ /*FIN SECTION MUJERES*/
+
+/*SECTION NOVEDADES*/
+.novedades {
+    margin-top: 70px;
+}
+.grid_containerN {
+    height: 80vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 30% 5% 15% 5% 35%;
+    gap: 4px;
+    
+}
+
+.grid_box_containerN:nth-child(1){
+    background-image:url(./img/grillainfo/1.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-row: 1/2;
+    
+}
+.grid_box_containerN:nth-child(2) {
+     background-image:url(./img/grillainfo/2.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+     grid-column: 2/4; 
+     grid-row: 1/3;
+ }
+ .grid_box_containerN:nth-child(3) {
+    background-image:url(./img/grillainfo/3.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+     grid-row: 1/5;
+ }
+ .grid_box_containerN:nth-child(4) {
+    background-image:url(./img/grillainfo/4.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+     grid-row: 2/6;
+ }
+ .grid_box_containerN:nth-child(5) {
+    background-image:url(./img/grillainfo/5.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+     grid-column: 2/4;
+    grid-row: 3/5;
+ }
+ .grid_box_containerN:nth-child(6) {
+    background-image:url(./img/grillainfo/6.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+     grid-column: 2/4;
+    grid-row: 5/6;
+ }
+ .grid_box_containerN:nth-child(7) {
+    background-image:url(./img/grillainfo/7.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+
+
+
+
+/*FIN SECTION NOVEDADES*/
+
+/*SECTION NOSOTROS*/
+.nosotros {
+    display: flex;
+    height: 60vh;
+}
+.instagram {
+    width: 50%;
+    height: 50vh;
+    background-image: url(./img/section_nosotros/face.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.facebook {
+    width: 50%;
+    height: 50vh;
+    background-image: url(./img/section_nosotros/insta.png);
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size:cover;
+}
+.titulo_nosotros {
+    font-size: .8rem;
+    text-align: center;
+    font-family:"Montserrat", "Helvetica Neue";
+    color: var(--color-rosa_b);
+
+}
+.titulo_nosotros_p {
+    margin-bottom: 8px;
+}
+
+
+.inputs_insc_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   
+    margin-top: 40px;
+    width: 60%;
+
 }
-.log_items {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 5px;
+.insc_input {
+padding: .5rem;
+border: none;
+border-radius: 4px;
+margin-bottom: 4px;
+border: 1px var(--color-rosa_b) solid;
+
 }
+
+.inscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.insc_btn {
+    margin-top: 10px;
+    margin-bottom: 200px;
+    padding: 5px;
+}
+/*FIN SECTION NOSOTROS*/
+
+/* SECTION FOOTER*/
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+    width: 100%;
+    height: 400px;
+    background-color: var(--color-rosa_a);
+    gap: 20%;
+   
+}
+.footer_box {
+    color: white;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.footer_box:first-child {
+    margin-left: 40px;
+}
+.footer_box:last-child {
+    margin-right: 40px;
+}
+.titulo_footer {
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+    font-family:"Montserrat", "Helvetica Neue";
+}
+
+/* FIN SECTIUON FOOTER */
+
+
+/* MEDIAS */
+
+@media screen and (max-width: 2070px) {
+    .instagram {
+       
+        background-size:contain;
+    }
+    
+    .facebook {
+      
+         background-size:contain;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid_box_containerH {
+        height: 40vh;
+    }
+    .grid_box_containerM {
+        height: 40vh;
+    }
+    .grid_box_containerN {
+        height: 80vh;
+      
+    }
+    .grid_containerN {
+      
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column;
+        height: 80vh;
+     }
+     .footer_box {
+       
+        width: 60%;
+        height: 250px;
+        display: flex;
+
+        
+    }
+    .footer_box:first-child {
+        margin-left: 10px;
+    }
+    .nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 20vh;
+    }
+    .instagram {
+        height: 20vh;
+        width: 100%;
+      
+    }
+    
+    .insc_btn {
+        
+        margin-bottom: 40px;
+        
+    }
+    .facebook {
+        height: 20vh;
+        width: 100%;
+        
+    }
+    .titulo_ropa { 
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .portada {
+        display: none;
+    }
+    .nav_container i {
+        display: block;
+      
+      }
+
+      .list_container {
+        position: absolute;
+        background-color: var(--gris);
+        flex-direction: column;
+        top: 46px;
+        right: 0;
+        width: 100%;
+        height: 30vh;
+        display: none;
+        z-index: 9999;
+        justify-content:flex-start;
+        
+      }
+      #toggle-menu:checked + .list_container {
+        display: flex;
+       
+      }
+      .log_recuperar {
+        padding-left: 0;
+      }
+      .list_container li:hover{
+        background-color: #f17787;
+        width: 100%;
+        
+    }
+    .list_container li {
+        padding: 14px;
+    }
+    .menu_items {
+        color: var(--color-rosa_b)
+    }
+    .menu_items:hover {
+        color: white;
+        transition: all .3s;
+    }
+    .log_face {
+        padding-bottom: 20px;
+    }
+  
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .log_input {
     padding: .4rem;
     border: none;
@@ -93,44 +620,35 @@ body {
 }
 
 .log_btn {
-    padding-top: 3px;
-    padding-bottom:5px;
-    padding-right: 30px;
-    padding-left: 30px;
+    background-color: var(--color-rosa_b);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
     transition: all .3s;
+    
 }
 .log_btn:hover {
-    background-color: var(--color-rosa_c);
-    color: aliceblue;
-    border: 1px white solid;
+  
     transition: all .3s;
     
 }
-.log_recuperar {
-    font-weight: bolder;
-    color: aliceblue;
-    padding-top: 4px;
-    font-size: .8em;
-    transition: all .3s;
-}
-.log_recuperar:hover {
-    
-    color:  var(--color-rosa_c);
-    padding-top: 4px;
-    transition: all .3s;
-}
-.list_container {
+
+.list_container { 
     display: flex;
-    gap: 40px;
-    padding-top: 30px;
-    justify-content:center;
+    gap: clamp(10px, 4vw , 180px);
+    justify-content:flex-start;
     align-items: center;
-    border-top: 1px var(--color-rosa_a) solid;
-    text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
+    padding-top: 30px;
+ 
 }
 .menu_items {
-    color: white;
+    color: black;
     transition: all .3s;
+    color: #6e6d7a;
+    font-size: 0.9rem;
+    font-weight:900;
+    line-height: 20px;
+    
 }
 .menu_items:hover {
     color: var(--color-rosa_c);
@@ -146,108 +664,7 @@ body {
     cursor: pointer;
     display: none;
   }
-  .nav_container {
-    text-align: center;
-  }
 
-@media screen and (max-width: 1100px) {
-    .header_container { 
-        flex-direction: column;
-        gap: 20px;
-        
-    }
-    .header {
-        height: 100%;
-    }
-    .log_container {
-        flex-direction: column;
-        padding-top: 0px;
- 
-    }
-    .log_items {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    .log_input {
-        width: clamp(20%, 50vw, 80%)
-    }
-    .log_btn {
-        width: clamp(20%, 50vw, 80%)
-    }
-    .list_container {
-        gap:20px;
-    }
-    .logo{
-        font-size: 4em;
-}
-.info_container {
-    display: none;
-}
-.register_container {
-width: 100%;
-min-width: 424px;
-}
-.log_face {
-    padding-bottom: 20px;
-}
-}
-
-@media screen and (max-width: 576px) {
- 
-  .nav_container i {
-    display: block;
-  
-  }
-  .list_container {
-    position: absolute;
-    background-color: var(--gris);
-    flex-direction: column;
-    top: 346px;
-    right: 0;
-    width: 100%;
-    height: 30vh;
-    display: none;
-    z-index: 9999;
-    justify-content:flex-start;
-    
-  }
-  #toggle-menu:checked + .list_container {
-    display: flex;
-   
-
-  }
-  .log_recuperar {
-    padding-left: 0;
-  }
-  .list_container li:hover{
-    background-color: #f17787;
-    width: 100%;
-    
-}
-.list_container li {
-    padding: 14px;
-}
-.menu_items {
-    color: var(--color-rosa_b)
-}
-.menu_items:hover {
-    color: white;
-    transition: all .3s;
-}
-.log_face {
-    padding-bottom: 20px;
-}
-.register_container {
-   
-    justify-content: center;
-    align-items: center;
-    max-width: 600px;
-    margin-left:0;
-}
-
-}
 
 /*Fin del HEADER*/
 
@@ -343,68 +760,7 @@ min-width: 424px;
 
 /*seccion de novedades*/
 
-.novedades_section {
-    height: 800px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 35% 5% 20% 5% 40%;
-    gap: 4px;
-    
-}
-.grid_item_novedad {
-    border: 1px white solid;
-}
-.grid_item_novedad:first-child {
-    background-image: url(./img/grillainfo/1.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-row: 1/2;
-    border-radius: 4px;
-}
-.grid_item_novedad:nth-child(2) {
-    background-image: url(./img/grillainfo/2.jpg) ;
-    background-position: center;
-    background-size: cover;
-    grid-column: 2/4; 
-    grid-row: 1/3;
-    border-radius: 4px;
-}
-.grid_item_novedad:nth-child(3) {
-    background-image: url(./img/grillainfo/3.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-row: 1/5;
-    border-radius: 4px;
-}
-.grid_item_novedad:nth-child(4) {
-    background-image: url(./img/grillainfo/4.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-row: 2/6;
-    border-radius: 4px;
-}
-.grid_item_novedad:nth-child(5) {
-    background-color: white;
-    opacity: .7;
-    grid-column: 2/4;
-    grid-row: 3/5;
-    border-radius: 4px;
-}
-.grid_item_novedad:nth-child(6) {
-    background-image: url(./img/grillainfo/6.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-column: 2/4;
-    grid-row: 5/6;
-    border-radius: 4px;
-}
-.grid_item_novedad:nth-child(7) {
-    background-image: url(./img/grillainfo/7.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
-}
+
 /* Fin seccion de Novedades*/
 
 /* Comienzo de seccion de Compras*/
